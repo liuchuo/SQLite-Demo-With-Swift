@@ -10,4 +10,4 @@
 
  ![Snip20161203_84](https://github.com/liuchuo/SQLite-Demo-With-Swift/blob/master/Snip20161203_83.png)
 
-  ![Snip20161203_83](https://github.com/liuchuo/SQLite-Demo-With-Swift/blob/master/Snip20161203_83.png)
+  ![Snip20161203_83](https://github.com/liuchuo/SQLite-Demo-With-Swift/blob/master/Snip20161203_84.png)
