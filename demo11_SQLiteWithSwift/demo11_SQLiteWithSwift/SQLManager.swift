@@ -8,7 +8,7 @@
 
 import UIKit
 
-let DBFILE_NAME = "Student.sqlite"
+let DBFILE_NAME = "Student2.sqlite"
 
 public class SQLManager : NSObject {
     // 创建该类的静态实例变量
@@ -41,7 +41,7 @@ public class SQLManager : NSObject {
         } else {
             // 创建表的SQL语句（根据自己定义的数据model灵活改动）
             print("数据库打开成功~！")
-            let createStudentTableSQL = "CREATE TABLE IF NOT EXISTS 't_Student' ('stuNum' TEXT NOT NULL PRIMARY KEY AUTOINCREMENT, 'stuName' TEXT);"
+            let createStudentTableSQL = "CREATE TABLE IF NOT EXISTS 't_Student' ('stuNum' TEXT NOT NULL PRIMARY KEY, 'stuName' TEXT);"
             if execSQL(SQL: createStudentTableSQL) == false {
                 // 失败
                 print("执行创建表的SQL语句出错~")

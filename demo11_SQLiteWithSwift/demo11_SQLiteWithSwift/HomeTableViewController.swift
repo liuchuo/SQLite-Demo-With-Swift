@@ -26,11 +26,11 @@ class HomeTableViewController: UITableViewController {
     }
     
     func loadTableViewData() {
-        let querySQL = "SELECT stuNum, stuName FROM 't_Student'"
+        let querySQL = "SELECT stuNum, stuName FROM 't_Student';"
         // 取出查询到的结果
         let resultDataArr = SQLManager.shareInstance().queryDataBase(querySQL: querySQL)
         stuArr = []
-        for dict in resultDataArr! {
+        for dict in (resultDataArr)! {
             let mymodel = StudentModel(idNum: dict["stuNum"] as! String, stuName: dict["stuName"] as! String)
             stuArr.append(mymodel)
             
